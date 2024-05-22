@@ -1,0 +1,39 @@
+# Change to true if you want to override suspicious.yaml
+# and only use your own config in this file.
+override_suspicious.yaml: false
+
+keywords:
+# Add your own keywords here or override the score
+# for the ones found in suspicious.yaml, e.g.:
+#   'myownkeyword': 50
+#    'appleid': 0
+    'linkaja': 25
+    'linkajax': 25
+    'linkajaid': 25
+    'linkaj4': 25
+    'L1nk4ja': 25
+    'l1nkaj4': 25
+    'akun': 25
+    'l1nk4j4': 25
+    'linkajakaget': 25
+    'link4j4kaget': 25
+    'voucher': 25
+    'bantuan': 25
+    'layanan': 25
+    'pembaharuan': 25
+    'pemulihan': 25
+    'pemulihann': 25
+    'bantuan': 25
+    'Dana': 25
+    'ovo': 25
+    'tokopedia': 25
+    'shopee': 25
+
+tlds:
+# Add your own TLDs here, e.g.:
+#    '.nu':
+#    '.se':
+     '.id':
+     '.gov.':
+     '.com':
+     
