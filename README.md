@@ -54,7 +54,7 @@ $ ./catch_phishing.py
 If you running MacOs or having a different OS version that would make the installation of phishing_catcher difficult, then having the tool dockerized is one of your options.
 
 ```
-docker build . -t phishing_catcher
+docker build . -t phinisi_detector
 ```
 ![container](https://i.imgur.com/nEo13PH.jpg)
 

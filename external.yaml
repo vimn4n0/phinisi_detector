@@ -33,7 +33,7 @@ tlds:
 # Add your own TLDs here, e.g.:
 #    '.nu':
 #    '.se':
-     '.id':
-     '.gov.':
-     '.com':
+#    '.id':
+#    '.gov.':
+#    '.com':
      
