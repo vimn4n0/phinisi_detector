@@ -1,10 +1,9 @@
-# Phishing Catcher
-
-Catch possible phishing domains in near real time by looking for suspicious TLS certificate issuances reported to the [Certificate Transparency Log (CTL)](https://www.certificate-transparency.org/) via the [CertStream](https://certstream.calidog.io/) API. "Suspicious" issuances are those whose domain name scores beyond a certain threshold based on a configuration file.
-
-This is just a working PoC. Feel free to contribute and tweak the code to fit your needs. 👍
-
-![Screencast of example usage.](https://i.imgur.com/4BGuXkR.gif)
+     _/\/\/\/\/\____/\/\________/\/\________________/\/\________________/\/\______________/\/\/\/\/\___
+    _/\/\____/\/\__/\/\________________/\/\/\/\______________/\/\/\/\____________________/\/\____/\/\_ 
+   _/\/\/\/\/\____/\/\/\/\____/\/\____/\/\__/\/\__/\/\____/\/\/\/\____/\/\____/\/\/\/\__/\/\____/\/\_  
+  _/\/\__________/\/\__/\/\__/\/\____/\/\__/\/\__/\/\__________/\/\__/\/\______________/\/\____/\/\_   
+ _/\/\__________/\/\__/\/\__/\/\/\__/\/\__/\/\__/\/\/\__/\/\/\/\____/\/\/\____________/\/\/\/\/\___    
+__________________________________________________________________________________________________     
 
 ### Installation
 
@@ -29,11 +28,13 @@ Here, a score of `25` is added to the generic keyword `login` when it is found i
 
 However, in order to be reported as suspicious by Phishing Catcher, the score assigned to a given certificate must meet or exceed (`>=`, "greater than or equal to") the following thresholds:
 
+------------------------
 | Score | Reported as  |
 | -----:| ------------ |
-|    65 | `Potential`  |
-|    80 | `Likely`     |
-|    90 | `Suspicious` |
+|  65   | `Potential`  |
+|  80   | `Likely`     |
+|  90   | `Suspicious` |
+------------------------
 
 > :bulb: See the `score_domain()` function in the source code for details regarding the scoring algorithm.
 
@@ -42,26 +43,13 @@ However, in order to be reported as suspicious by Phishing Catcher, the score as
 Once configured to your liking, usage is as simple as running the script:
 
 ```
-$ ./catch_phishing.py
+$ ./phinisi_detector.py
 ```
 
-### Example phishing caught
+### phinisi detector in Docker container
 
-![Paypal Phishing](https://i.imgur.com/AK60EYz.png)
-
-### Phishing catcher in Docker container
-
-If you running MacOs or having a different OS version that would make the installation of phishing_catcher difficult, then having the tool dockerized is one of your options.
+If you running MacOs or having a different OS version that would make the installation of phinisi_detector difficult, then having the tool dockerized is one of your options.
 
 ```
 docker build . -t phinisi_detector
 ```
-![container](https://i.imgur.com/nEo13PH.jpg)
-
-# License
-
-GNU GPLv3
-
-If this tool has been useful for you, feel free to thank me by buying me a coffee.
-
-[![Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoff.ee/x0rz)
