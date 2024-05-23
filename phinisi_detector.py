@@ -25,7 +25,7 @@ from confusables import unconfuse
 
 certstream_url = 'wss://certstream.calidog.io'
 
-log_directory = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'phinisi-log')
+log_directory = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'deteksi-log')
 if not os.path.exists(log_directory):
     os.makedirs(log_directory)
 
